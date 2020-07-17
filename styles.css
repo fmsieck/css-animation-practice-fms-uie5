@@ -1,0 +1,91 @@
+/* CSS RESETS ----------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE ----------------------------------------- */
+
+.boxes {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.boxes:hover {
+  border: 0.15em solid #f5f5f5;
+  transition: border 0.75s;
+}
+
+.top-left {
+  background-color: lightcoral;
+  top: 0;
+  left: 0;
+  animation-name: main-top-left;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.top-right {
+  background-color: lightskyblue;
+  top: 0;
+  right: 0;
+  animation-name: main-top-right;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.bottom-left {
+  background-color: lightgreen;
+  bottom: 0;
+  left: 0;
+  animation-name: main-bottom-left;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.bottom-right {
+  background-color: lightgoldenrodyellow;
+  bottom: 0;
+  right: 0;
+  animation-name: main-bottom-right;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* BLOCKS / ANIMATIONS */
+
+@keyframes main-top-left {
+  to {
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100% 0;
+    background-color: #000001;
+  }
+}
+@keyframes main-top-right {
+  to {
+    top: 50%;
+    right: 50%;
+    border-radius: 0 0 0 100%;
+    background-color: #000001;
+  }
+}
+@keyframes main-bottom-left {
+  to {
+    bottom: 50%;
+    left: 50%;
+    border-radius: 0 100% 0 0;
+    background-color: #000001;
+  }
+}
+@keyframes main-bottom-right {
+  to {
+    bottom: 50%;
+    right: 50%;
+    border-radius: 100% 0 0 0;
+    background-color: #000001;
+  }
+}
